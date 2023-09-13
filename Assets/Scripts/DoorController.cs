@@ -6,7 +6,7 @@ public class DoorController : MonoBehaviour
 {
     public GameObject Door;
     public PyramidCollisionDetection pyramidCollision;
-    public SphereCollisionDetection sphereCollision;
+    public SpheresCollisionDetection sphereCollision;
     public CubeCollisionDetection cubeCollision;
 
     private void Update()
