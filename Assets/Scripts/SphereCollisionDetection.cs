@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SphereCollisionDetection : MonoBehaviour
+public class SpheresCollisionDetection : MonoBehaviour
 {
     public bool isCollideWithSphere = false;
 
