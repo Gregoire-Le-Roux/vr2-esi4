@@ -39,7 +39,7 @@ public class MenuController : MonoBehaviour
 
     public void PlayGame ()
     {
-        SceneManager.LoadScene("ExampleVRScene");
+        SceneManager.LoadScene("roomOneScene");
     }
 
     public void ShowAboutScene (bool show)

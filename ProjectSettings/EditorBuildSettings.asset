@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: 598d40dea9f060c4e9c05391e55513f6
   - enabled: 1
+    path: Assets/Scenes/roomOneScene.unity
+    guid: c706144991762bd4ab0cdba51c3d1e95
+  - enabled: 1
+    path: Assets/Scenes/RoomTwoScene.unity
+    guid: 11c529536ca9de345bc2998ddd79124f
+  - enabled: 1
+    path: Assets/Scenes/Salle3.unity
+    guid: d867848ec877ad34aa281470d71cdf72
+  - enabled: 1
     path: Assets/Scenes/ExampleVRScene.unity
     guid: 71758840edbdbc64687141ef407c11f4
   m_configObjects:
