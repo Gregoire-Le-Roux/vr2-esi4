@@ -9,13 +9,28 @@ public class DoorController : MonoBehaviour
     public SpheresCollisionDetection sphereCollision;
     public CubeCollisionDetection cubeCollision;
 
+    private Animator anim;
+    private bool hasOpened = false;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        anim = Door.GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
-        if (pyramidCollision.isCollideWithPyramid &&
+        if (!hasOpened && 
+            pyramidCollision.isCollideWithPyramid &&
             sphereCollision.isCollideWithSphere &&
-            cubeCollision.isCollideWithCube)
+            cubeCollision.isCollideWithCube) 
         {
-            Door.SetActive(false);
+            // Door.SetActive(false);
+
+            anim.SetBool("isOpen", true);
+            audioSource.Play();
+            hasOpened = true; // La porte est ouverte, ne répète pas l'animation.
         }
     }
 }
