@@ -7,6 +7,13 @@ TagManager:
   - doll
   - coeur
   - Coeur
+  - Porte
+  - RecepteurCube
+  - RecepteurSphere
+  - RecepteurPyramide
+  - Cube
+  - Sphere
+  - Pyramide
   layers:
   - Default
   - TransparentFX
