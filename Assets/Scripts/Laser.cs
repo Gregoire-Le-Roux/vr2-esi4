@@ -8,6 +8,7 @@ public class RaycastDetect : MonoBehaviour
     
     public GameObject Laser;
     public Animator Door;
+    public AudioSource doorSound;
     public bool DoorIsClosed = false;
 
     void Update()
@@ -20,6 +21,7 @@ public class RaycastDetect : MonoBehaviour
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
                 Door.SetBool("doorIsOpen",true);
                 DoorIsClosed = true;
+                doorSound.Play();
                 Laser.SetActive(false);
             }
             else

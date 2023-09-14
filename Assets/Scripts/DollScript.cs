@@ -7,13 +7,14 @@ public class DollScript : MonoBehaviour
     public GameObject Door;
     public Animator doorAnimatorController;
 
-    private AudioClip music;
+    public AudioSource doorSound;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Coeur"))
         {
             doorAnimatorController.SetBool("doorIsOpen", true);
+            doorSound.Play();
         }
     }
 }
