@@ -9,8 +9,7 @@ public class ChangeScene : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Hello, world!");
-        if (collision.gameObject.GetComponent<PlayerController>())
+        if (collision.gameObject.CompareTag("Player"))
         {
             LoadLevel();
         }
@@ -18,7 +17,6 @@ public class ChangeScene : MonoBehaviour
 
     void LoadLevel()
     {
-        Debug.Log("on load level");
         SceneManager.LoadScene(SceneName);
     }
 
