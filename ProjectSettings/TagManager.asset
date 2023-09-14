@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - doll
+  - coeur
+  - Coeur
+  - Porte
+  - RecepteurCube
+  - RecepteurSphere
+  - RecepteurPyramide
+  - Cube
+  - Sphere
+  - Pyramide
   layers:
   - Default
   - TransparentFX
