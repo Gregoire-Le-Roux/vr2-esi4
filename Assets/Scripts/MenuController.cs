@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
 {
     public Button StartButton, AboutButton, QuitButton, BackButton;
     public GameObject MainSection, AboutSection;
+    public AudioSource clickSoundEffect;
 
 
     private void Awake()
@@ -39,17 +40,20 @@ public class MenuController : MonoBehaviour
 
     public void PlayGame ()
     {
+        clickSoundEffect.Play();
         SceneManager.LoadScene("roomOneScene");
     }
 
     public void ShowAboutScene (bool show)
     {
+        clickSoundEffect.Play();
         MainSection.SetActive(!show);
         AboutSection.SetActive(show);
     }
 
     public void QuitGame ()
     {
+        clickSoundEffect.Play();
         bool quit = false;
         #if UNITY_EDITOR
             quit = true;
