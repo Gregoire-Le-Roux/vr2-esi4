@@ -6,6 +6,7 @@ public class RaycastDetect : MonoBehaviour
 {
     public LayerMask layerMask;
     public GameObject Door;
+    public GameObject Laser;
 
     void Update()
     {
@@ -15,6 +16,7 @@ public class RaycastDetect : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             Door.SetActive(false);
+            Laser.SetActive(false);
         }
         else
         {
