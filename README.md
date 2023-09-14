@@ -33,4 +33,8 @@ Groupe:
 
  
 
-**Objectif : ** Déplacer soit le fauteuil roulant, soit le lit mortuaire, soit la hache devant le laser de la poupée pour que la porte s'ouvre
+**Objectif :** Déplacer soit le fauteuil roulant, soit le lit mortuaire, soit la hache devant le laser de la poupée pour que la porte s'ouvre
+
+
+### Exemple de gameplay
+Lien vidéo youtube: https://www.youtube.com/watch?v=WbnxTxNPH50&ab_channel=MaKdKroApzoeiruty
