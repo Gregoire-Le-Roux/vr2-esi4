@@ -5,13 +5,19 @@ using UnityEngine;
 public class SpheresCollisionDetection : MonoBehaviour
 {
     public bool isCollideWithSphere = false;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Sphere") && !isCollideWithSphere)
         {
             isCollideWithSphere = true;
-            Debug.Log("Sphere: " + isCollideWithSphere);
+            audioSource.Play();
         }
     }
 
