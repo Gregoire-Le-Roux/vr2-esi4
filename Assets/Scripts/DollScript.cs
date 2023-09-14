@@ -13,7 +13,7 @@ public class DollScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coeur"))
         {
-            doorAnimatorController.SetBool("ouverture", true);
+            doorAnimatorController.SetBool("doorIsOpen", true);
         }
     }
 }
