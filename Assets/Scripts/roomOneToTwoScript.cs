@@ -16,7 +16,7 @@ public class ChangeScene : MonoBehaviour
 
     void LoadLevel()
     {
-        SceneManager.LoadScene("RoomTwo");
+        SceneManager.LoadScene("RoomTwoScene");
     }
 
 }
