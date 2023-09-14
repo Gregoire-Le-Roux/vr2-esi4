@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public GameObject Tp;
+
+    public string SceneName;
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Hello, world!");
         if (collision.gameObject.CompareTag("Player"))
         {
             LoadLevel();
@@ -16,7 +18,8 @@ public class ChangeScene : MonoBehaviour
 
     void LoadLevel()
     {
-        SceneManager.LoadScene("RoomTwoScene");
+        Debug.Log("on load level");
+        SceneManager.LoadScene(SceneName);
     }
 
 }
