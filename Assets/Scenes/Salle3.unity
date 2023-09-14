@@ -2386,7 +2386,7 @@ GameObject:
   - component: {fileID: 986060885}
   - component: {fileID: 986060884}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Tableau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2472,14 +2472,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986060883}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 17.17, y: 2.365, z: -4.865}
+  m_LocalRotation: {x: -0.6636254, y: 0.24413387, z: -0.24413387, w: -0.6636254}
+  m_LocalPosition: {x: 16.532, y: 2.365, z: -8.901}
   m_LocalScale: {x: 0.18534745, y: 1, z: 0.093702026}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1134747349}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 360, z: 40.395}
 --- !u!1 &990787876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1807380643437744, guid: aa90fd891e355a14bac53d549b545c70, type: 3}
@@ -3115,13 +3115,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
