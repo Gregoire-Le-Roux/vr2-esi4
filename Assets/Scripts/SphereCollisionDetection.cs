@@ -18,7 +18,6 @@ public class SpheresCollisionDetection : MonoBehaviour
         {
             isCollideWithSphere = true;
             audioSource.Play();
-            Debug.Log("Sphere: " + isCollideWithSphere);
         }
     }
 

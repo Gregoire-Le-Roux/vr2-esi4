@@ -18,7 +18,6 @@ public class CubeCollisionDetection : MonoBehaviour
         {
             isCollideWithCube = true;
             audioSource.Play();
-            Debug.Log("Cube: " + isCollideWithCube);
         }
     }
 

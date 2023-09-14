@@ -17,7 +17,6 @@ public class PyramidCollisionDetection : MonoBehaviour
         if (collision.gameObject.CompareTag("Pyramide") && !isCollideWithPyramid)
         {
             isCollideWithPyramid = true;
-            Debug.Log("Pyramide: " + isCollideWithPyramid);
             audioSource.Play();
         }
     }
