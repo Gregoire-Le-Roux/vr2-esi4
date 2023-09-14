@@ -5,6 +5,12 @@ using UnityEngine;
 public class PyramidCollisionDetection : MonoBehaviour
 {
     public bool isCollideWithPyramid = false;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -12,6 +18,7 @@ public class PyramidCollisionDetection : MonoBehaviour
         {
             isCollideWithPyramid = true;
             Debug.Log("Pyramide: " + isCollideWithPyramid);
+            audioSource.Play();
         }
     }
 
