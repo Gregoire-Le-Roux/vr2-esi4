@@ -10,7 +10,7 @@ public class ChangeScene : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Hello, world!");
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
             LoadLevel();
         }
